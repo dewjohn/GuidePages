@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DmxZ</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css"><!--演示页面样式，使用时可以不引用-->
+</head>
+<body>
+	<div id="wrap">
+
+	  <a href="https://dmx.pub" class="hb">
+	    <div class="c">
+	      <img src="https://cdn.jsdelivr.net/gh/a2396837/hexophoto/img/1.jpg" alt="https://dmx.pub"/>
+	      <div class="txt">
+	        <h1>主页</h1>
+	        <p>Do what you love,love what you do！</p>
+	      </div>
+	    </div>
+	  </a>
+	  <div class="fullBg">
+	    <img src="https://cdn.jsdelivr.net/gh/a2396837/hexophoto/img/1.jpg" alt="https://dmx.pub/"/>
+	  </div>
+
+
+	  <a href="https://github.com/a2396837" class="hb">
+	    <div class="c">
+	      <img src="https://cdn.jsdelivr.net/gh/a2396837/hexophoto/img/2.jpg" alt="https://github.com/a2396837"/>
+	      <div class="txt">
+	        <h1>Github</h1>
+	        <p>Do what you love,love what you do！</p>
+	      </div>
+	    </div>
+	  </a>
+	  <div class="fullBg">
+	    <img src="https://cdn.jsdelivr.net/gh/a2396837/hexophoto/img/2.jpg" alt="https://github.com/a2396837"/>
+	  </div>
+
+
+	  <a href="https://dmx.pub/about" class="hb">
+	    <div class="c">
+	      <img src="https://cdn.jsdelivr.net/gh/a2396837/hexophoto/img/3.jpg" alt="https://dmx.pub/about"/>
+	      <div class="txt">
+	        <h1>关于我</h1>
+	        <p>About ME！</p>
+	      </div>
+	    </div>
+	  </a>
+	  <div class="fullBg">
+	    <img src="https://cdn.jsdelivr.net/gh/a2396837/hexophoto/img/3.jpg" alt="https://dmx.pub/about"/>
+	  </div>
+
+
+    <a href="https://dmx.best/" class="hb">
+    <div class="c">
+      <img src="https://cdn.jsdelivr.net/gh/a2396837/hexophoto/img/4.jpg" alt="https://dmx.best/"/>
+      <div class="txt">
+        <h1>在线听歌</h1>
+        <p>Do what you love,love what you do！</p>
+      </div>
+    </div>
+  </a>
+  <div class="fullBg">
+    <img src="https://cdn.jsdelivr.net/gh/a2396837/hexophoto/img/4.jpg" alt="https://dmx.best/"/>
+  </div>
+	
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  var docWidth = $('body').width(),
+		      $wrap = $('#wrap'),
+		      $images = $('#wrap .hb'),
+		      slidesWidth = $wrap.width();
+		  
+		  $(window).on('resize', function(){
+		    docWidth = $('body').width();
+		    slidesWidth = $wrap.width();
+		  })
+		  
+		  $(document).mousemove(function(e) {
+		    var mouseX = e.pageX,
+		        offset = mouseX / docWidth * slidesWidth - mouseX / 2;
+		    
+		    $images.css({
+		      '-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
+		              'transform': 'translate3d(' + -offset + 'px,0,0)'
+		    });
+		  });
+		})
+	</script>
+</body>
+</html>
