@@ -1,7 +1,7 @@
 # DmxZ博客引导页
 
 # 预览地址
-demo : https://dmx.pub
+demo : https://dmxz.me
 
 # 网页版截图
 
