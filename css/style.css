@@ -38,7 +38,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #efeeee;
+    background: #ffffff00;
     transition: box-shadow .2s ease-out;
     position: relative;
 }
