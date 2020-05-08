@@ -19,6 +19,7 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    z-index: 1;
 }
 .container .box{
     display: flex;
@@ -79,4 +80,14 @@ a {
 }
 
 
+.typed {
+    z-index: 2;
+    padding-bottom: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+    .typed {
+        display: none;
+    }
+}
 
